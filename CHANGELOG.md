@@ -1,5 +1,12 @@
 # Cambios
 
+## 0.7.0-beta.1 — 4 de noviembre de 2026
+
+Beta unificada: incorpora el afinador visual, control MIDI CC58, nivel USB de pico/RMS y comparación asistida de presets por RMS. Instrumentos compactos integrados en el editor. Selección automática del canal con señal y activación de audio explícita. El indicador de afinación tiene el doble de altura y la nota centrada.
+
+Las lecturas MIDI completas ya no esperan 400 ms de silencio; se conservan las pausas de seguridad y la parada ante errores. No se ofrece un porcentaje DSP sin medición real.
+
+
 ## 0.6.1-beta.1 — 4 de noviembre de 2026
 
 Primera beta pública empaquetada del editor base.

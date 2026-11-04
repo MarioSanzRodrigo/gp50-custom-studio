@@ -3,9 +3,9 @@
 Editor independiente y portable para Valeton GP-50 en Windows 11.
 Desarrollado por Mario S.R. — [Dokken](https://www.guitarristas.info/usuarios/dokken7789).
 
-**Beta pública 0.6.1-beta.1.** Probada en el equipo del desarrollador con firmware
+**Beta pública 0.7.0-beta.1.** Probada en el equipo del desarrollador con firmware
 1.1.0; la compatibilidad en otros equipos necesita más pruebas. No es un producto
-oficial de Valeton. La versión Pro experimental no se incluye en esta descarga.
+oficial de Valeton. Incluye el afinador, el medidor USB y la nivelación asistida de presets.
 
 ## Uso
 
@@ -53,3 +53,9 @@ node -e "(async()=>{for(const t of ['midi-safety','auto-edit','snaptone-codec','
 Publica incidencias con el firmware, versión del editor, navegador y mensaje de
 error. No adjuntes contraseñas, tokens ni tus modelos de terceros sin permiso.
 Consulta CHANGELOG.md, SOURCE-LICENSES.md y PRIVACIDAD.md.
+
+## Afinador y niveles de audio
+
+Pulsa **Conectar audio** y permite el acceso a la entrada USB de la GP-50. MIDI y audio son conexiones independientes. Para afinar, configura Dry en USB Audio de la pedalera y en el selector del editor. El medidor muestra pico y RMS digitales; no garantiza detectar saturación analógica. El afinador físico en Mute puede silenciar la señal USB.
+
+Preset leveling compara diez segundos de señal Wet con una referencia RMS. Ajusta Volume manualmente y repite la medida. No equivale a normalización perceptual LUFS. El porcentaje DSP no está disponible.

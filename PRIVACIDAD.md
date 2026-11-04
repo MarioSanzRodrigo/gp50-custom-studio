@@ -17,3 +17,5 @@ el paquete no incluye claves ni sesiones del desarrollador.
 
 No se envían automáticamente registros de fallos al desarrollador. Si decides
 publicar un informe en GitHub o el foro, revisa antes la información que adjuntas.
+
+El editor solicita además permiso de audio cuando pulsas Conectar audio. Analiza localmente la entrada seleccionada para afinación, nivel y comparación RMS. No graba ni envía ese audio a Internet. El proveedor de la web puede registrar datos técnicos de las visitas.
