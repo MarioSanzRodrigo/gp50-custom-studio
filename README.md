@@ -1,61 +1,13 @@
-# GP50 Custom Studio Editor
+# GP50 Custom Studio Editor · 0.8.1
 
-Editor independiente y portable para Valeton GP-50 en Windows 11.
-Desarrollado por Mario S.R. — [Dokken](https://www.guitarristas.info/usuarios/dokken7789).
+Editor independiente para Valeton GP-50, por Mario S.R. - Dokken. Aplicación de escritorio para Windows 11 x64, con Electron integrado, afinador, niveles USB y nuestra cadena de efectos visual.
 
-**Beta pública 0.7.0-beta.1.** Probada en el equipo del desarrollador con firmware
-1.1.0; la compatibilidad en otros equipos necesita más pruebas. No es un producto
-oficial de Valeton. Incluye el afinador, el medidor USB y la nivelación asistida de presets.
+[Web y descarga](https://gp50-custom-studio.pages.dev/) · [Instalador Windows](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.8.1/GP50-Custom-Studio-0.8.1-Setup.exe) · [Fuentes completos](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.8.1/GP50-Custom-Studio-0.8.1-Sources.zip)
 
-## Uso
+NAMs e IRs muestra los presets asociados y su estado activo/bypass, con cobertura de lectura explícita y análisis cancelable. Se elimina la creación de presets desde NAM y la etiqueta V2 preview de la interfaz.
 
-Descarga el ZIP Windows desde Releases, extrae toda la carpeta, cierra otros
-editores, conecta la GP-50 y abre `Abrir editor.cmd`. Pulsa Reconectar MIDI o
-Actualizar lista rápida y acepta el permiso del navegador. Utiliza Microsoft Edge.
-No instales Node ni Python para usar la versión portable.
+La biblioteca guarda presets y backups independientes de archivos SnapTone/IR, con SHA256, importación/exportación y recuperación de archivos individuales. Estos últimos contienen archivos disponibles localmente: no son un volcado binario de los modelos/IR de la GP-50. Para slots cargados con otros programas, aporta sus originales; la aplicación muestra los que siguen sin archivo recuperable.
 
-Selecciona un preset para escucharlo y editarlo. Los cambios de parámetros se
-guardan en la pedalera al soltar el control. Haz antes una copia de tus presets.
-Para detener el servidor local ejecuta `Cerrar editor.cmd`.
+Cierra Suite y otros editores antes de instalar/conectar. El instalador conserva el perfil anterior. Firmware de referencia: GP-50 1.1.0. Instalador sin firma digital comercial. Las pruebas automáticas no equivalen a comprobaciones físicas de todas las operaciones.
 
-## Funciones
-
-- Selección de presets y navegación anterior/siguiente.
-- Cadena visual, parámetros con perillas y entrada numérica.
-- Guardar copia, restaurar la base de la sesión y exportar .prst.
-- Gestión de capturas e IRs; conversión local NAM A1/A2 compatible a SnapTone.
-- Comunicación MIDI serializada; ante un error se detiene sin reintentos automáticos.
-
-NAM requiere un WAV de referencia de la instalación local de Valeton Suite o un
-archivo suministrado por el usuario. **Ese audio no se distribuye**. Suite no tiene
-que estar abierta. TONE3000 abre el sitio oficial para iniciar sesión y descargar;
-el archivo descargado se selecciona después en el editor. No se anuncia selección
-automática desde la web ni soporte para todas las arquitecturas NAM.
-
-## Desarrollo y fuentes
-
-Descarga y extrae el archivo Sources.zip de la release para obtener el árbol de desarrollo. Dentro de ese archivo, `studio/` contiene el editor completo distribuido, incluidas las fuentes del worker,
-TypeScript y C del conversor en `studio/converter/`. `overrides/` contiene las
-adaptaciones del editor base. `reference/valeton-gp50-master/app/static/` es la base
-MIT necesaria para regenerar. En PowerShell ejecuta `./build.ps1` y después
-`./Build-Portable.ps1`. Ninguno necesita acceder a la pedalera para construir.
-
-El motor puede regenerarse con Node24+ mediante `node converter/build.mjs` y,
-con clang con soporte wasm32/SIMD, `node converter/build-wasm.mjs`. Consulta su
-README y NOTICE. Los kernels precompilados están incluidos.
-
-Para ejecutar las comprobaciones sin hardware:
-
-```powershell
-node -e "(async()=>{for(const t of ['midi-safety','auto-edit','snaptone-codec','tone3000'])console.log(t,await require('./tests/'+t+'.cjs')())})().catch(e=>{console.error(e);process.exit(1)})"
-```
-
-Publica incidencias con el firmware, versión del editor, navegador y mensaje de
-error. No adjuntes contraseñas, tokens ni tus modelos de terceros sin permiso.
-Consulta CHANGELOG.md, SOURCE-LICENSES.md y PRIVACIDAD.md.
-
-## Afinador y niveles de audio
-
-Pulsa **Conectar audio** y permite el acceso a la entrada USB de la GP-50. MIDI y audio son conexiones independientes. Para afinar, configura Dry en USB Audio de la pedalera y en el selector del editor. El medidor muestra pico y RMS digitales; no garantiza detectar saturación analógica. El afinador físico en Mute puede silenciar la señal USB.
-
-Preset leveling compara diez segundos de señal Wet con una referencia RMS. Ajusta Volume manualmente y repite la medida. No equivale a normalización perceptual LUFS. El porcentaje DSP no está disponible.
+Este repositorio contiene documentación. El código completo está en el Sources.zip adjunto a la release; el Source code automático de GitHub solo contiene el árbol de documentación de su tag. Los fuentes incluyen instrucciones de construcción y tests. GPL-3.0-only, con componentes MIT y avisos Electron/Chromium conservados. Proyecto independiente, sin vinculación oficial con Valeton.

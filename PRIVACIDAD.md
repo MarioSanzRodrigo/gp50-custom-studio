@@ -1,21 +1,11 @@
 # Privacidad
 
-La web de presentación no incorpora formularios, cuentas, publicidad, cookies
-propias ni scripts de analítica. Sus demostraciones son ilustraciones y no
-solicitan acceso al audio ni al MIDI. El proveedor de alojamiento puede tratar
-datos técnicos de conexión conforme a sus propias condiciones.
+La web de presentación no incorpora formularios, cuentas, publicidad ni analítica propia. Sus demostraciones no solicitan acceso MIDI/audio. Cloudflare y GitHub pueden procesar los datos técnicos de conexión conforme a sus políticas.
 
-El editor portable funciona en el ordenador del usuario. Los presets y nombres
-leídos pueden guardarse en el almacenamiento local del navegador. Las importaciones
-NAM pueden guardarse en IndexedDB para conservar una copia antes de una carga.
-Esos datos no viajan dentro del ZIP que se distribuye a otros usuarios.
+La aplicación de escritorio V2 funciona localmente con Electron y un perfil separado de Edge. En su carpeta de datos guarda ajustes, caché de presets, backups, descargas NAM y un registro limitado de operaciones/errores. No distribuye esos datos con el instalador ni los envía automáticamente al desarrollador.
 
-El editor solicita permisos MIDI para comunicarse con la pedalera. TONE3000 y
-guitarristas.info son servicios externos: al abrirlos se aplican sus políticas.
-La configuración de acceso a TONE3000, cuando se utiliza, pertenece al usuario;
-el paquete no incluye claves ni sesiones del desarrollador.
+MIDI se usa para comunicarse con la GP-50. El audio se activa por separado y se analiza localmente para afinación, nivel USB y comparación RMS; el editor no lo graba ni lo sube a Internet.
 
-No se envían automáticamente registros de fallos al desarrollador. Si decides
-publicar un informe en GitHub o el foro, revisa antes la información que adjuntas.
+TONE3000 se carga desde su sitio oficial en una vista aislada, sin acceso a Node, al preload del editor ni a sus permisos MIDI/audio. El login y las cookies se guardan en una partición propia del perfil V2. Al iniciar sesión, navegar o descargar se aplican las políticas de TONE3000 y de sus proveedores. El editor no incluye claves ni sesiones del desarrollador.
 
-El editor solicita además permiso de audio cuando pulsas Conectar audio. Analiza localmente la entrada seleccionada para afinación, nivel y comparación RMS. No graba ni envía ese audio a Internet. El proveedor de la web puede registrar datos técnicos de las visitas.
+Los informes de diagnóstico solo se guardan/exportan por iniciativa del usuario. Antes de compartir un archivo en el foro o GitHub revisa sus datos. La desinstalación conserva backups y datos locales del usuario.
