@@ -1,6 +1,6 @@
 # Privacidad
 
-La web de presentación no incorpora formularios, cuentas, publicidad ni analítica propia. Sus demostraciones no solicitan acceso MIDI/audio. Cloudflare y GitHub pueden procesar los datos técnicos de conexión conforme a sus políticas.
+La web de presentación no incorpora formularios, cuentas, publicidad ni analítica propia. Sus demostraciones no solicitan acceso MIDI/audio. Cloudflare, GitHub y Google Fonts (tipografías) pueden procesar los datos técnicos de conexión conforme a sus políticas.
 
 La aplicación de escritorio V2 funciona localmente con Electron y un perfil separado de Edge. En su carpeta de datos guarda ajustes, caché de presets, backups, descargas NAM y un registro limitado de operaciones/errores. No distribuye esos datos con el instalador ni los envía automáticamente al desarrollador.
 
