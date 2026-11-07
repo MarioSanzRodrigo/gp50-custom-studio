@@ -18,6 +18,12 @@ R8BRAIN-MIT.txt en esas carpetas.
 Las fuentes completas del editor se adjuntan como Sources.zip en la misma release
 que el instalador de Windows.
 
+## App Android (GP50 Custom Studio para Android)
+
+La app Android es el mismo editor web dentro de un WebView, con un puente
+Bluetooth LE propio (Java) bajo GPL-3.0-only. Sus fuentes (Editor_v2/android, sin la
+clave de firma) van en GP50-Custom-Studio-0.9.6-Sources.zip, en la release v0.9.6.
+
 ## GP-50 Custom Firmware
 
 El archivo de firmware es una versión modificada del firmware oficial V1.1.0 de
@@ -39,3 +45,4 @@ dibujos y las capturas del pedal de esta web son representaciones propias.
 
 El WAV de referencia de Valeton, modelos personales, credenciales y registros de
 usuario quedan fuera de la distribución.
+

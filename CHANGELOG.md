@@ -1,5 +1,41 @@
 # Cambios
 
+## 0.9.6 · GP-50 Custom Firmware v14 + app Android
+
+### Firmware v14 (Valeton GP-50, base oficial V1.1.0)
+
+- **FX Carousel en la vista de cadena (PARA):**
+  - ilustraciones animadas para cada bloque: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB, N→S y EXP;
+  - carrusel al girar PARA, con brillo del color del efecto y mapa de la cadena;
+  - carga del DSP en la cabecera;
+  - el panel de parámetros de abajo se oscurece para encajar con el carrusel.
+- **Global Settings con el estilo del diseño elegido:**
+  - Studio: tarjetas;
+  - Vintage Amp: tolex, placas crema y display ámbar;
+  - Neon: synthwave;
+  - Pro: lista.
+  - En Appearance, Global EQ y Layouts, cada ajuste aparece junto a su control: P, L, M o R.
+- **Cuándo se activa:** con cualquier diseño distinto de Original. Con Original, todo es como en la v13.1.
+
+### GP50 Custom Studio para Android 0.9.6 (nuevo)
+
+- **Qué es:** el editor en el móvil, conectado a la GP-50 por **Bluetooth LE**.
+- **Conexión:**
+  - la app habla con la característica BLE-MIDI de la pedalera directamente, con un paquete por mensaje, tal como lo exige su firmware;
+  - las respuestas por Bluetooth, que llegan en tramas de 100 bytes, se convierten a las tramas de 19 bytes de USB;
+  - solo muestra «conectada» cuando la pedalera ya ha respondido.
+- **Interfaz para el móvil:**
+  - tarjeta de conexión compacta;
+  - barra fija para cambiar de preset;
+  - cadena de pedales que cabe en la pantalla;
+  - 4 mandos por fila;
+  - pestañas Presets, Editor, Firmware y Más.
+- **Diagnóstico Bluetooth:** se puede copiar o compartir.
+- **Requisitos:** Android 8 o superior con Bluetooth LE.
+
+### Editor de escritorio
+
+- Sigue siendo la 0.9.5, ya compatible con el firmware v14 (release v0.9.5).
 ## 0.9.5 · editor + GP-50 Custom Firmware v13.1
 
 ### Firmware v13.1 (Valeton GP-50, base oficial V1.1.0)
@@ -35,3 +71,4 @@
 
 ## 0.8.1
 - Primera versión publicada del editor (Windows 11 x64).
+
