@@ -1,5 +1,18 @@
 # Cambios
 
+## 0.9.7 · editor 0.9.6 + app Android 0.9.7
+
+El firmware no cambia: sigue siendo la v14.
+
+- **Funciones acumulativas:** con el firmware v14 (o cualquier versión posterior) vuelve a funcionar todo lo de v10–v13 en el panel «Firmware Dokken»:
+  - EQ global (perfiles y Custom de 4 bandas) y colas de delay/reverb;
+  - carga del DSP;
+  - diseños de pantalla y animación de carga.
+- **Causa:** el refresco de la carga del DSP (cada 2 s) ponía el panel en «Comprobando…» y bloqueaba los controles mientras leía. Por Bluetooth eso era casi todo el tiempo, y las secciones aparecían como «Requiere firmware v11». Ahora el refresco es silencioso, no bloquea nada y una respuesta perdida no cambia el firmware detectado.
+- **Avisos de versión:** «Requiere firmware vN o posterior» muestra la versión real de cada sección (v11 EQ y colas, v12 diseños, v13 animación de carga) y solo aparece si la pedalera tiene de verdad un firmware anterior.
+- **App Android:** margen de 4 s para leer el firmware custom por Bluetooth.
+- **Tests:** nuevas pruebas de que v14 y versiones posteriores conservan todas las funciones anteriores, y de que el refresco lento no bloquea el panel.
+
 ## 0.9.6 · GP-50 Custom Firmware v14 + app Android
 
 ### Firmware v14 (Valeton GP-50, base oficial V1.1.0)

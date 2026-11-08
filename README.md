@@ -2,13 +2,13 @@
 
 Firmware custom, editor de escritorio y app Android para **Valeton GP-50**, por [Dokken](https://guitarristas.info/usuarios/dokken7789).
 
-**[Web, wiki y descargas](https://gp50-custom-studio.pages.dev/)** · [Release v0.9.6](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/tag/v0.9.6)
+**[Web, wiki y descargas](https://gp50-custom-studio.pages.dev/)** · [Release v0.9.7](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/tag/v0.9.7)
 
 | | Versión | Descarga |
 |---|---|---|
-| GP-50 Custom Firmware | v14 (base oficial V1.1.0) | [GP-50_V1.1.0_NAMCAB_v14_FXStyles.bin](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.6/GP-50_V1.1.0_NAMCAB_v14_FXStyles.bin) |
-| GP50 Custom Studio para Android | 0.9.6 · Android 8+ · Bluetooth | [APK](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.6/GP50-Custom-Studio-0.9.6-Android.apk) · [Fuentes](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.6/GP50-Custom-Studio-0.9.6-Sources.zip) |
-| GP50 Custom Studio Editor | 0.9.5 · Windows 11 x64 | [Instalador](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.5/GP50-Custom-Studio-0.9.5-Setup.exe) (release v0.9.5) |
+| GP-50 Custom Firmware | v14 (base oficial V1.1.0) | [GP-50_V1.1.0_NAMCAB_v14_FXStyles.bin](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.7/GP-50_V1.1.0_NAMCAB_v14_FXStyles.bin) |
+| GP50 Custom Studio para Android | 0.9.7 · Android 8+ · Bluetooth | [APK](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.7/GP50-Custom-Studio-0.9.7-Android.apk) · [Fuentes](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.7/GP50-Custom-Studio-0.9.7-Sources.zip) |
+| GP50 Custom Studio Editor | 0.9.6 · Windows 11 x64 | [Instalador](https://github.com/MarioSanzRodrigo/gp50-custom-studio/releases/download/v0.9.7/GP50-Custom-Studio-0.9.6-Setup.exe) |
 
 ## Firmware
 
@@ -21,6 +21,7 @@ Firmware custom, editor de escritorio y app Android para **Valeton GP-50**, por 
 - **5 diseños** de la pantalla principal: Original, Studio, Vintage Amp, Neon y Pro.
 - **7 animaciones de carga** con la pedalera apagada y el USB conectado, y **BYE BYE** al apagar.
 - **12 temas** de pantalla, **15 modos** de LED, **3 animaciones** de arranque y **atenuación** automática.
+- **Compatibilidad hacia atrás:** cada versión del firmware conserva todo lo anterior; el editor y la app activan cada función según la versión mínima que la introdujo.
 - **Seguridad:** arranque seguro con A + B al encender, y vuelta al firmware oficial con el actualizador de Valeton.
 
 Instrucciones y notas en `FIRMWARE-v14.md`, dentro de la release. Guías con capturas en la [wiki](https://gp50-custom-studio.pages.dev/wiki.html).
